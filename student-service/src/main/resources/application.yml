@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: student-service
+  data:
+    mongodb:
+       uri: mongodb+srv://movie-api:1234@movie-api.ufpbclf.mongodb.net/?retryWrites=true&w=majority&appName=student-service
+       database: student-mang-sys
+
+eureka:
+  client:
+    service-url:
+      service-url:
+      defaultZone: http://localhost:8761/eureka/  
+    register-with-eureka: true
+    fetch-registry: true
+
+server:
+  port: 8082
